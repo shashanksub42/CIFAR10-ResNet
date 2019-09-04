@@ -5,6 +5,9 @@ Classified CIFAR10 dataset using a residual network built in PyTorch
 
 I have implemented the ResNet-18 architecture. This architecture consisists of one convolution layer followed by four residual blocks, each with two convolution layers and a shortcut block, which is used for downsampling the inputs. 
 
+![Residual Block](/flowchart/Untitled Diagram.png)
+Format: ![Alt Text](url)
+
 ### Residual block
 -  **Convolution Layer 1**
     - Input and output channels are the same as they are passed when calling this block, as well as the stride. Padding is set to 1. This layer downsamples the images if the input and output size are different and sends it to the next layer. If the input and output size are the same, then no downsampling is done. 
