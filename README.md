@@ -29,11 +29,26 @@ I have implemented the ResNet-18 architecture. This architecture consisists of o
     
  ## Training
  
-The model, as well as the training and validation data were moved to the GPU for faster training. I trained on the CPU for 10 epochs, and each epoch took approximately 45 mins to complete. That made the entire training time on the CPU about 7 hours. On the other hand, each epoch on a NVIDIA 1050 Ti GPU took only around 2 minutes, thus keeping the overall training time less than 20 minutes (for 20 epochs). However, this was just to check the training time and compare the CPU to the GPU. The final model is trained for 20 epochs. 
+The model, as well as the training and validation data were moved to the GPU for faster training. I trained the model on a 2.8GHz Intel Core i7-7700HQ CPU for 10 epochs, and each epoch took approximately 45 mins to complete. That made the entire training time on the CPU about 7 hours. On the other hand, each epoch on a 4GB NVIDIA GeForce GTX 1050 Ti GPU took only around 2 minutes, thus keeping the overall training time less than 20 minutes (for 20 epochs). However, this was just to check the training time and compare the CPU to the GPU. The final model is trained for 20 epochs. 
 
 ## Validation metrics
 
 After training for 20 epochs, the validation accuracy plateaus at 81%.
+
+## Test metrics
+
+I have listed the test accuracies of my model, for each of the different classes in the CIFAR10 dataset:
+
+- Accuracy of airplane : 84 %
+- Accuracy of automobile : 91 %
+- Accuracy of  bird : 73 %
+- Accuracy of   cat : 64 %
+- Accuracy of  deer : 75 %
+- Accuracy of   dog : 71 %
+- Accuracy of  frog : 85 %
+- Accuracy of horse : 82 %
+- Accuracy of  ship : 90 %
+- Accuracy of truck : 90 %
 
 
 
