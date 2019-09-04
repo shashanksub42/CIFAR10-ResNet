@@ -3,7 +3,7 @@ Classified CIFAR10 dataset using a residual network built in PyTorch
 
 ## Model
 
-I have implemented the ResNet-18 architecture. This architecture consisists of one convolution layer followed by four residual blocks, each with two convolution layers and a shortcut block, which is used for downsampling the inputs. 
+I have implemented the ResNet-18 architecture. This architecture consisists of one convolution layer followed by four residual blocks, each with two convolution layers and a shortcut block, which is used for downsampling the inputs. 70% of the data is used for training and 30% for validation. 
 
 ### Residual block
 -  **Convolution Layer 1**
@@ -29,7 +29,12 @@ I have implemented the ResNet-18 architecture. This architecture consisists of o
     
  ## Training
  
-The model, as well as the training and validation data were moved to the GPU for faster training. I trained the model on a 2.8GHz Intel Core i7-7700HQ CPU for 10 epochs, and each epoch took approximately 45 mins to complete. That made the entire training time on the CPU about 7 hours. On the other hand, each epoch on a 4GB NVIDIA GeForce GTX 1050 Ti GPU took only around 2 minutes, thus keeping the overall training time less than 20 minutes (for 20 epochs). However, this was just to check the training time and compare the CPU to the GPU. The final model is trained for 20 epochs. 
+The model, as well as the training and validation data were moved to the GPU for faster training. I trained the model on a 2.8GHz Intel Core i7-7700HQ CPU and on a 4GB NVIDIA GeForce GTX 1050 Ti GPU. 
+
+- CPU training time = approximately 7.5 hours for 10 epochs
+- GPU training time = approximately 20 minutes for 10 epochs
+
+Final model is trained for 20 epochs, in order to obtain a stable validation accuracy.  
 
 ## Validation metrics
 
